@@ -17,7 +17,7 @@ import Portofolio from "../views/Portofolio";
 const Router = createBrowserRouter([
     {
         element: <Layout />,
-        loader: () => (localStorage.access_token ? null : redirect("/login")),
+        // loader: () => (localStorage.access_token ? null : redirect("/login")),
         children: [
             {
                 path: '/portofolio',
